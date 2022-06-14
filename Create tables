@@ -1,0 +1,46 @@
+--Table setup for years 2018, 2019 and 2020
+--Replace "2018" with correct date to change table name
+create table public."2018" (
+    hotel varchar,
+    is_canceled int,
+    lead_time int,
+    arrival_date_year int,
+    arrival_date_month varchar,
+    arrival_date_week_number int,
+    arrival_date_day_of_month int,
+    stays_in_weekend_nights int,
+    stays_in_week_nights int,
+    adults int,
+    children varchar,
+    babies varchar,
+    meal varchar,
+    country varchar,
+    market_segment varchar,
+    distribution_channel varchar,
+    is_repeated_guest int,
+    previous_cancellations int,
+    previous_bookings_not_canceled int,
+    reserved_room_type varchar,
+    assigned_room_type varchar,
+    booking_changes int,
+    deposit_type varchar,
+    agent varchar,
+    company varchar,
+    days_in_waiting_list int,
+    customer_type varchar,
+    adr numeric,
+    required_car_parking_spaces int,
+    total_of_special_requests int,
+    reservation_status varchar,
+    reservation_status_date date
+);
+--meal cost table
+create table public."meal_cost"(
+  cost int,
+  meal varchar
+ );
+ --market segment discount table
+ create table public."market_segment"(
+  discount decimal,
+  market_segment varchar
+ ),
